@@ -24,6 +24,17 @@ function addPlants(name, species, wateringSchedule) {
   plants.push(newFlower);
 }
 
+const form = document.getElementById("flower-form");
+form.addEventListener("submit", addPlants(e));
+e.preventDefault();
 
+const name = form.name.value;
+const species = form.species.value;
+const wateringSchedule = form.waterSchedule.value;
+
+// const btn = getElementById("button");
+// btn.addEventListener("click", (event) => {
+// event.addPlants ();
+// }
 
 displayPlants();
