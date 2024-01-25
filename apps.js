@@ -24,4 +24,6 @@ function addPlants(name, species, wateringSchedule) {
   plants.push(newFlower);
 }
 
+
+
 displayPlants();
