@@ -49,4 +49,4 @@ form.addEventListener("submit", (event) => {
   addPlants(name, species, watering);
 
 
-displayPlants();
+displayPlants()
