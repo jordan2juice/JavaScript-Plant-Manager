@@ -7,13 +7,17 @@ const flower = {
 };
 
 const rawData = localStorage.getItem ('flower')
+const parsedData = JSON.parse(rawData)
+let plants = [];
+plants.push ('flower');
 
-const plants = [''];
 
 plants.push (flower);
 const flowerShop = JSON.stringify(flower);
 localStorage.getItem ("flower, ")
-
+if (parsedData) {
+  plants = parsedData;
+}
 
 
 function displayPlants() {
